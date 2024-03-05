@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+        // Declaración de un arreglo vacío
+        int[] arregloVacio = new int[0];
+
+        // Declaración de un arreglo con elementos
+        int[] miArreglo = {1, 2, 3, 4, 5};
+
+        // Acceso a elementos del arreglo
+        System.out.println(miArreglo[0]); // Output: 1
+        System.out.println(miArreglo[2]); // Output: 3
+
+        // Propiedad length
+        System.out.println(miArreglo.length); // Output: 5
+
+        // Métodos de manipulación de arreglos
+        miArreglo[0] = 6; // miArreglo ahora es [6, 2, 3, 4, 5]
+        System.out.println(miArreglo[0]);
+
+        // Iteración sobre arreglos
+        for (int i = 0; i < miArreglo.length; i++) {
+            System.out.println(miArreglo[i]);
+        }
+
+        // Usando for-each loop
+        for (int elemento : miArreglo) {
+            System.out.println(elemento);
+        }
+    }
+}
